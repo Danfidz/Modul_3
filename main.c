@@ -120,7 +120,10 @@ int main()
         while (fgets(string, 1024, fp) != NULL)
         {
             // printf("%s", string); // print each line
-            if (line == 1) {strcpy(nama, string); }
+            if (line == 1) {
+                int pjg = strlen(string);
+                strncpy(nama, string, pjg-1); 
+            }
             else if (line == 2) {strcpy(list_senj, string); }
             line++;
         }
