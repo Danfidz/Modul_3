@@ -64,7 +64,7 @@ void tambah_artifak(int *HP, int *atk, int *cRate, int *cDam, int *ER, int *EM, 
     }
     else if (senjata == 4)
     {
-        *atk = *atk + (*atk * 15 / 100);
+        *atk *= 115/100;
         *EM = *EM + 80;
     }
     else if (senjata == 5)
